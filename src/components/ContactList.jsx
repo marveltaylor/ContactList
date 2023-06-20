@@ -7,6 +7,7 @@ const dummyContacts = [
   ];
 
 export default function ContactList() {
+    const [contacts, setContacts] = useState(dummyContacts)
     return (
         <table>
         <thead>
