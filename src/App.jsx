@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './App.css';
 import ContactList from './components/ContactList.jsx';
 
-function App() {
+export default function App() {
 
   return (
     <>
@@ -10,5 +10,3 @@ function App() {
     </>
   )
 }
-
-export default App
