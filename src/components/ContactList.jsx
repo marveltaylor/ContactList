@@ -22,7 +22,7 @@ useEffect(() => {
             console.error(error);
         }
     }
-    fetchConctacts()
+    fetchContacts()
 }, [])
 
     return (
