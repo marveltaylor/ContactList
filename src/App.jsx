@@ -1,9 +1,8 @@
-import { useState } from 'react'
-import './App.css'
-import ContactList from './components/ContactList'
+import { useState } from 'react';
+import './App.css';
+import './components/ContactList.jsx';
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>

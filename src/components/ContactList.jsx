@@ -1,4 +1,5 @@
-import React from "react"
+import React from "react";
+import { useState } from "react";
 
 const dummyContacts = [
     { id: 1, name: "R2-D2", phone: "222-222-2222", email: "r2d2@droids.com" },
@@ -7,8 +8,9 @@ const dummyContacts = [
   ];
 
 export default function ContactList() {
-    const [contacts, setContacts] = useState(dummyContacts)
-    console.log("Contacts: ", contacts)
+const [contacts, setContacts] = useState(dummyContacts)
+console.log("Contacts: ", contacts)
+
     return (
         <table>
         <thead>
