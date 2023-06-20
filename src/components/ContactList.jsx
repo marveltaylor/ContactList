@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useEffect } from "react";
 import ContactRow from './ContactRow';
 
 const dummyContacts = [
