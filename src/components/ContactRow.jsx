@@ -11,5 +11,5 @@ export default function ContactRow({contact}) {
         <td>{contact.phone}</td>
     </tr>
     </>
-    )
+    );
 }
