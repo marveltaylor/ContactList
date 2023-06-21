@@ -40,7 +40,7 @@ useEffect(() => {
             <td>Phone</td>
           </tr>
             {contacts.map((contact) => {
-                return <ContactRow key={contact.id} contact={contact} />;
+                return <ContactRow setSelectedContactId = {setSelectedContactId} key={contact.id} contact={contact} />;
              })}
         </tbody>
       </table>
