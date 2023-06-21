@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function ContactRow({contact}) {
+export default function ContactRow({setSelectedContactId, contact}) {
 
     return (
     <>
