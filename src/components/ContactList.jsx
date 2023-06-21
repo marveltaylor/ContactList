@@ -10,6 +10,7 @@ const dummyContacts = [
 
 export default function ContactList() {
 const [contacts, setContacts] = useState(dummyContacts);
+
 useEffect(() => {
     async function fetchContacts() {
         try {

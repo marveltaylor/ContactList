@@ -7,7 +7,7 @@ export default function App() {
 
   return (
     <>
-    {selectedContactId ? (
+    {selectedContactId ? ( //If it is a truthy value, for now, render a div with a short message. If selectedContactId is falsey, render the ContactList component.
       <div>Selected Contact View</div>
     ) : (
       <ContactList/>
