@@ -23,8 +23,8 @@ useEffect(() => {
             console.error(error);
         }
     }
-    fetchContacts()
-}, [])
+    fetchContacts();
+}, []);
 
     return (
         <table>
