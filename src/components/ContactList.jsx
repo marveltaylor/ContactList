@@ -9,7 +9,7 @@ import ContactRow from "./ContactRow";
 //   ];
 
 export default function ContactList({setSelectedContactId}) { //pass setSelectedContactId function to ContactList component
-const [contacts, setContacts] = useState(dummyContacts);
+const [contacts, setContacts] = useState([]);
 
 useEffect(() => {
     async function fetchContacts() {
