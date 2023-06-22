@@ -20,6 +20,7 @@ export default function SelectedContact({SelectedContact, setSelectedContact}) {
 
     return (
         <>
+        {contact && <p>{contact.email}</p>}
         </>
     );
 }
