@@ -1,6 +1,6 @@
 import {useState, useEffect} from "react";
 
-export default function SelectedContact({SelectedContact, setSelectedContact}) {
+export default function SelectedContact({selectedContactId, setSelectedContactId}) {
     const [contact, setContact] = useState(null);
     console.log(contact);
 
@@ -16,7 +16,7 @@ export default function SelectedContact({SelectedContact, setSelectedContact}) {
             }
         }
         testFunction();
-    }, []);
+    }, [selectedContactId]);
 
     return (
         <>
