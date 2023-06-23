@@ -16,6 +16,9 @@ export default function App() {
     ) : (
       <ContactList setSelectedContactId = {setSelectedContactId}/>
     )}
+    <div>
+      <Button></Button>
+    </div>
     </>
   );
 }
