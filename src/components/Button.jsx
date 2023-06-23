@@ -1,14 +1,9 @@
-import React from "react";
+// import React from "react";
 
-interface Props {
-    children: string
-    onClick: () => void;
-}
+// const Button = () => {
+//     return (
+//         <button className="button">Button</button>
+//     )
+// }
 
-const Button = ({children}: Props) => {
-    return (
-        <button className="button" onClick={onClick}>{children}</button>
-    )
-}
-
-export default Button
+// export default Button

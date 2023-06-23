@@ -2,7 +2,6 @@ import { useState } from 'react';
 import './App.css';
 import ContactList from './components/ContactList.jsx';
 import SelectedContact from './components/SelectedContact';
-import Button from './components/Button';
 
 export default function App() {
   const [selectedContactId, setSelectedContactId] = useState(null);
@@ -11,14 +10,11 @@ export default function App() {
     <>
     {selectedContactId ? ( //If it is a truthy value, for now, render a div with a short message. If selectedContactId is falsey, render the ContactList component. 
       <div>
-        <SelectedContact selectedContactId={selectedContactId}/>
+        <SelectedContact selectedContactId={selectedContactId} setSelectedContactId={setSelectedContactId}/>
       </div>
     ) : (
       <ContactList setSelectedContactId = {setSelectedContactId}/>
     )}
-    <div>
-      <Button onClick={() => console.log("Clicked")}>Go Back</Button>
-    </div>
     </>
   );
 }

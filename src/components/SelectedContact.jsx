@@ -19,7 +19,12 @@ export default function SelectedContact({selectedContactId, setSelectedContactId
 
     return (
         <>
-        {contact && <p>{contact.email}</p>}
+        {contact && 
+        <div>
+            <p>{contact.email}</p>
+        <button onClick = {() => {setSelectedContactId (null)}}>Go Back</button>
+        </div>}
+        
         </>
-    );
-}
+        );
+    }
