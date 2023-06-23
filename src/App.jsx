@@ -17,7 +17,7 @@ export default function App() {
       <ContactList setSelectedContactId = {setSelectedContactId}/>
     )}
     <div>
-      <Button>Go Back</Button>
+      <Button onClick={() => console.log("Clicked")}>Go Back</Button>
     </div>
     </>
   );
